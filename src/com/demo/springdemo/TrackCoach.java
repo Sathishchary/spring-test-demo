@@ -5,7 +5,7 @@ public class TrackCoach implements Coach {
 	private FortuneService fortuneService;
 	
 	public TrackCoach() {
-		
+		 System.out.println(" track coach default constructor");
 	}
 	
 	public TrackCoach(FortuneService fortuneService) {
@@ -21,5 +21,16 @@ public class TrackCoach implements Coach {
 	public String getDailyFortune() {
 		return "Just do it" + fortuneService.getFortune();
 	}
+	
+	// add init method
+	 public void getMyMethod() {
+		 System.out.println("custom method print track coach");
+	 }
+	
+	// add a destroy method
+	 public void getMyMethodDestroy() {
+		 System.out.println("custom method Destroy print track coach");
+	 }
+	
 
 }
